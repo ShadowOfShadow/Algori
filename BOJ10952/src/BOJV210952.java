@@ -13,7 +13,7 @@ public class BOJV210952 {
 			String str = br.readLine();
 			
 			int A = str.charAt(0) - 48;
-			int B = str.charAt(0) - 48;
+			int B = str.charAt(2) - 48;
 			
 			if(A==0 && B==0) {
 				break;
