@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class BOJ1110 {
+public class BOJV11110 {
 
 	public static void main(String[] args) throws IOException {
 		
@@ -29,11 +29,11 @@ public class BOJ1110 {
 			}
 			result = Integer.toString(temp1) + Integer.toString(temp3);
 			i++;
-			if(Integer.valueOf(result) == N) {
-				System.out.println(i);
-				break;
-			}
+			
+			if(Integer.valueOf(result) == N) break;
+			
 			O = Integer.valueOf(result);
 		}
+		System.out.println(i);
 	}
 }
