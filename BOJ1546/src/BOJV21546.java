@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BOJ1546 {
+public class BOJV21546 {
 
 	public static void main(String[] args) throws IOException {
 		
@@ -20,23 +20,18 @@ public class BOJ1546 {
 		int i = 0;
 		float max = 0;
 		float sum = 0;
-		int result = 0;
 		
 		while(st.hasMoreTokens()) {
 			subject[i] = Integer.parseInt(st.nextToken());
 			if(subject[i] > max) {
 				max = subject[i];
 			}
+			sum += subject[i];
 			i++;
 		}
 		
 		
-		for(int j = 0 ; j < subject.length ; j++) {
-			subject[j] = (subject[j]/max)*100;
-			sum += subject[j];
-		}
-		
-		System.out.println(sum/subject.length);
+		System.out.println(((sum/max)*100)/A);
 		
 	}
 }
