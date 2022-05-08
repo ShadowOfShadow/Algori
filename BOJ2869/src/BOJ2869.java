@@ -5,6 +5,5 @@ public class BOJ2869 {
 		
 		System.out.println("not solve");
 		
-		
 	}
 }
